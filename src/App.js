@@ -7,6 +7,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+
+        <div id="hello-paraguay">
+          <strong>Hello, Paraguay!</strong>
+        </div>
+        <div id="add-task">
+          <input id="add-task-input" placeholder="New task item" />
+        </div>
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
