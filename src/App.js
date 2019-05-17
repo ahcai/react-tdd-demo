@@ -10,23 +10,15 @@ class App extends Component {
   };
 
   handleTitleOnClick = () => {
-    let newTitle = '';
-
-    if (this.state.title === ENGLISH_TITLE) {
-      newTitle = SPANISH_TITLE;
-    } else {
-      newTitle = ENGLISH_TITLE;
-    }
-
-    this.setState({ title: newTitle });
+    // toggle between the title language by updating the state
   }
 
   render() {
     return (
       <div className="App">
-          <h1 id="title" onClick={this.handleTitleOnClick}>
-              {this.state.title}
-          </h1>
+        <h1 id="title" onClick={this.handleTitleOnClick}>
+          {this.state.title}
+        </h1>
       </div>
     );
   }
